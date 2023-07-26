@@ -1,0 +1,22 @@
+<!--inline style way-->
+<p style="background-image: url('img_girl.jpg');"></p>
+
+<!--CSS style way-->
+<style>
+    body {
+      background-image: url('img_girl.jpg');
+    }
+</style>
+
+<!--Background attributes-->
+<style>
+    body {
+        background-image: url('example_img_girl.jpg'); /*the entire page have background image*/
+        /* if the image is small it will repeat itself endlessly SO */
+        background-repeat: no-repeat; /*to avoid repeat*/
+        /*if the Image doesn't cover the entire body THEN*/
+        background-attachment: fixed;
+        background-size: cover; /*the image will cover the entire element */
+        /* background-size: 100% 100%; ==> the background image will strech to cover the entire element */
+    }
+</style>

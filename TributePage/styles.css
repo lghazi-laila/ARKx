@@ -1,0 +1,32 @@
+#right {
+    float: right;
+    width: 75%;
+}
+
+#right p {
+    font-size: 24px;
+}
+
+#left {
+    float:left;
+    width: 25%;
+}
+
+body{
+	background: linear-gradient(45deg, #FF99B8, #47FFF9) fixed;
+	color: #152E4C;
+}
+
+h1 {
+	text-align:center;
+}
+
+ul {
+    font-size: 20px;
+}
+
+img {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+}

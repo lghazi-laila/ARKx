@@ -1,15 +1,5 @@
-#right {
-    float: right;
-    width: 75%;
-}
-
-#right p {
-    font-size: 24px;
-}
-
-#left {
-    float:left;
-    width: 300px;
+p {
+    font-size: 20px;
 }
 
 body{
@@ -21,8 +11,8 @@ h1 {
 	text-align:center;
 }
 
-ul {
-    font-size: 20px;
+ul{
+    font-size:large;
 }
 
 img {

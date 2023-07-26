@@ -3,11 +3,60 @@
 
 <!--CSS style way-->
 <style>
-    body {
-      background-image: url('img_girl.jpg');
+    body { /* body : selector */
+      background-image: url('img_girl.jpg'); 
+      /* Background-image: property */
+      /* url('img_girl.jpg') : value */
     }
 </style>
 
+<!--Selectors-->
+
+<style>
+    * { /* Universal selector */
+        color: purple;
+    }
+
+    div { /* Type selector: select all dive elements*/
+        color: white;
+    }
+
+    .alert-text { /* will select all elements with the attribute class="alert-text" */
+        color: red;
+    }
+    /*Note: we can add multiple classes to a single element as a space-separated 
+    list, such as class="alert-text severe-alert" */
+
+    #title {
+        background-color: red; /* ID selector */
+    }
+
+    .read,  /* We use a comma-separated list to groupe selectors that share the same style declarations */ 
+    .unread {
+        color: white;
+        background-color: black;
+    }
+
+    .subsection.header { /* chained selectors are used to select a specific tag with multiple classes */
+        /*NO SPACE*/
+        color: red;
+    }
+    /* This syntax basically works for chaining any combination of selectors,
+    except for chaining more than one type selector.*/
+    /*Ex: class and ID*/
+    .subsection#preview {
+        color: blue;
+    }
+
+    /*Descendant Combinator*/
+    .ancestor .contents { /* The child will only be selected if it is nested inside of ancestor, no matter how deep.*/
+        color: red;
+    }
+
+
+</style>
+
+<!--Attribute examples-->
 <!--Background attributes-->
 <style>
     body {
@@ -20,3 +69,36 @@
         /* background-size: 100% 100%; ==> the background image will strech to cover the entire element */
     }
 </style>
+
+<!--Color and background color-->
+<style>
+    p {
+        /* hex example: */
+        color: #1100ff;
+    }
+
+    p {
+        /* rgb example: */
+        color: rgb(100, 0, 127);
+    }
+
+    p {
+        /* hsl example: */
+        color: hsl(15, 82%, 56%);
+    }
+</style>
+
+<!--CSS anatomy-->
+<style>
+    p {
+        font-family :'Times New Roman', Times, serif ;
+        font-size : 22px ;
+        font-weight :700 ; /* 700 is equivalent to bold*/
+    }
+</style>
+
+<!--Adding CSS to HTML-->
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <!--rel : relationship -->
+</head>

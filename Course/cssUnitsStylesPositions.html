@@ -1,0 +1,114 @@
+<!--Units--------------------------------------------------------------->
+
+<!--Absolute Unit : px-->
+
+<!--Relative Units: em / rem-->
+<!--1em is the font-size of an element 
+    (or the element’s parent if you’re using it to set font-size).-->
+<!--1rem is the font-size of the root element (either :root or html).-->
+
+<!--Viewport Units-->
+<!--The units vh and vw relate to the size of the viewport.-->
+    <!--1vh is equal to 1% of the viewport height-->
+    <!--1vw is equal to 1% of the viewport width.-->
+
+<!--Fonts--------------------------------------------------------------->
+
+<style>
+    body {
+        font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        /*system font’ stack*/
+    }
+</style>
+
+<!--Online Font Libraries-->
+
+<!--HTML : Import through a link like so :-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!--CSS : use an import tag @import :-->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+</style>
+
+<!--Either method will import that font and make it available for me to use in your CSS-->
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+
+<!--Downloaded Fonts--------------------------------------------------------------->
+<!--We can use a downloaded font from the web, In your CSS file,
+    you import and define a custom font using the @font-face rule,
+    and then use as you would any other font-family.-->
+<style>
+    @font-face {
+        font-family: my-cool-font;
+        src: url(../fonts/the-font-file.woff);
+    }
+
+    h1 {
+        font-family: my-cool-font, sans-serif;
+    }
+</style>
+
+<!--Css font elements :-->
+<style>
+    h1 {
+        font-style: italic;
+        letter-spacing: 2px;
+        line-height: 10px;
+        /*adjusts the space between lines in wrapped text*/
+        text-transform: capitalize;
+        /*changes the case of the given text*/
+        text-shadow: #FC0 1px 0 10px;
+    }
+
+    /*Ellipses: omission of the last words of the text*/
+    .overflowing {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
+<!--CSS Positions-->
+<style>
+    div {
+        position: static;
+            /*
+            - Elements are positioned in the normal flow of the document. 
+            - Elements are not affected by the top, bottom, left, right, or z-index properties.
+            */
+        position: relative;
+            /*
+            -Elements are positioned relative to their normal position in the document flow.
+            -Use the top, bottom, left, and right properties to adjust the position of the element 
+            relative to its normal position.
+            */
+        position: absolute;
+            /*
+            - Elements are positioned relative to:
+                - the nearest positioned ancestor that has a position value other than static
+                - or to the initial containing block if no positioned ancestor is found.
+            - Elements are taken out of the normal document flow, so they don't affect the positioning of other elements.
+            - You can use the top, bottom, left, and right properties to specify the exact position of the element.
+            */
+        position: fixed;
+            /*
+            -  Elements are positioned relative to the viewport (the browser window), even when scrolling.
+            - They do not affect the positioning of other elements.
+            - You can use the top, bottom, left, and right properties to specify the exact position of the element. 
+            */
+        position: sticky;
+            /*
+            - Elements are positioned based on the user's scroll position.
+            - Initially, they are positioned relative to their normal position in the document flow, 
+                but as the user scrolls, they "stick" to a specific position.
+            - You can use the top, bottom, left, and right properties to control the "stickiness" of the element.
+            */
+    }
+</style>

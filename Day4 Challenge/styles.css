@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%22");
+
+* {
+    font-family: Poppins, Helvetica, sans-serif, Arial;
+    background-color: #f0f2f5;
+}
+
+#left h1 {
+    color: #2b77f2;
+    font-size: 70px;
+    margin: 0px;
+}
+
+#left p {
+    font-size: 30px;
+    color: #303438;
+}
+
+#LoginStyle {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+form, input, a{
+    border-radius: 5px;
+    background-color:#ffffff;
+    font-size: 17px;
+}
+
+#parent {
+    text-align: center;
+    top: 20%;
+    left: 7%;
+    position: absolute;
+}
+
+#left, #right {
+    display: inline-block;
+    margin: auto;
+}
+
+#left {
+    text-align: left;
+    margin: 50px;
+}
+
+input {
+    display: block;
+    margin: 10px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid;
+    border-color: #d1d6dc;
+}
+
+#loginA {
+    background-color: #2b77f2 ;
+    color:#ffffff;
+    width: 92%;
+}
+#loginB {
+    background-color: #28a745;
+    color:#ffffff;
+    width: auto;
+    margin: auto;
+}
+
+#righ > a {
+    color: #2b77f2;
+}
+
+hr {
+    border-style: solid;
+    color: #d1d6dc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;}
+
+body{
+    background-color: #000000;
+    margin: 0px;
+    background: linear-gradient(45deg, #df42b1, #151853) fixed;
+}
+
+/* navigation bar*/
+
+#navbar {
+    background-color: #000000;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0px;
+}
+
+.navigation{
+    display: inline-block;
+}
+
+.navigation a{
+    color: #fdfffd;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    color: #df42b1;
+}
+
+.logoA{
+    background: -webkit-linear-gradient(bottom, #bb47ff, #ffb699);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin: 10px 0px 10px 40px;
+}
+
+.logoB{
+    color: #fdfffd;
+    display: inline-block;
+    margin: 10px;
+    margin: 10px 40px 10px 0px;
+}
+
+#logo {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* Home division */
+#home{
+    position: relative;
+    margin-top: 70px;
+}
+
+i{
+    color: #df42b1;
+    margin: 10px;
+}
+
+table{
+    width: 100vp;
+}
+
+td{
+    vertical-align: bottom;
+    text-align: center;
+
+}
+
+.tdR{
+    width: 30vw;
+}
+
+img {
+    width: 70vw;
+    height:auto;
+}
+
+img,
+.rightfloat,
+#speakers,
+#contact{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.800);
+    border-radius: 2px;
+}
+/* floating div*/
+
+.rightfloat{
+    background-color:#fdfffd8c;
+    width: 700px;
+    height:350px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+.within{
+    width: 550px;
+    height: 310px;
+    float: right;
+    background-color: #fdfffd;
+    padding: 20px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.within h1{
+    font-size: 3.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.within p{
+    font-size: 1.5rem;
+}
+
+.within button{
+    position: absolute;
+    top: 325px;
+    right: 190px;
+    border: 0px;
+    background-color: #df42b1;
+    font-size: 1rem;
+    border-radius: 25px;
+    padding: 5px 10px 5px 20px;
+    color: #fdfffd;
+}
+
+.within i{
+    color:#fdfffd;
+}
+
+.within button:hover{
+    background-color: #151853;
+}
+
+/* speakers division*/
+#speakers{
+    background-color:#fdfffd8c ;
+    padding: 20px;
+    margin: 3px;
+    text-align: center;
+}
+
+.speakerid{
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.speakerid::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #000000 100%);
+    margin-top: -150px;
+    height: 150px;
+    width: 100%;
+    content: '';
+  }
+
+#speakers img{
+    width: 350px;
+    height: auto;
+}
+
+#speakers h1{
+    color: #fdfffd;
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+#speakers p{
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+}
+
+.speakername {
+    color: #fdfffd;
+    bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.speakerjob{
+    color: #df42b1;
+    bottom: 0px;
+    font-size: 1rem;
+}
+
+/*footer (contact) div*/
+
+#contact{
+    background-color: #151853;
+    padding: 20px;
+    margin: 10px 3px 10px 3px;
+    text-align: center;
+    color: #7193bc;
+    font-size: 1rem;
+}
+
+#contact table{
+    margin: auto;
+    border-spacing: 30px;
+    padding: 0px;
+}
+
+#contact p{
+    margin: 0px;
+}
+
+

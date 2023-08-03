@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>FlexBox</title>
+</head>
+
+<body>
+    <!--Flex container and flex items-->
+    <div class="flex-container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+    <style>
+        .flex-container {
+            border: 10px solid red;
+            display: flex;
+        }
+
+        .flex-container div {
+            background: plum;
+            border: 10px solid seagreen;
+            height: 100px;
+            flex: 1;
+        }
+
+        .flex-container .two {
+            flex: 2;
+        }
+    </style>
+    <!--The flex declaration is actually a shorthand for 3 properties that you can set on a flex item.-->
+    <!--Flex is actually a shorthand for flex-grow, flex-shrink and flex-basis-->
+    <!--flex: 1 equates to: flex-grow: 1, flex-shrink: 1, flex-basis: 0. Or flex: 1 1 0-->
+    <!--flex-grow expects a single number as its value, 
+            and that number is used as the flex-item’s “growth factor”.-->
+    <!--flex-shrink sets the “shrink factor” of a flex item. 
+            flex-shrink only ends up being applied if the size of all flex items is larger than their parent container.
+            If you do not want an item to shrink then you can specify flex-shrink: 0;-->
+    <!--flex-basis simply sets the initial size of a flex item, 
+            so any sort of flex-growing or flex-shrinking starts from that baseline size. 
+            using 0 as a flex-basis means that items would ignore the item’s width, and everything would shrink evenly.
+            Using auto as a flex-basis tells the item to check for a width declaration (width: 250px).-->
+
+    <!--flex : 1 == flex 1 1 0-->
+    <!--flex : auto == flex 1 1 auto-->
+
+    <!--Axes-->
+    <style>
+        .flex-container {
+            flex-direction: row; /*column*/
+        }
+    </style>
+    <!--There are two axes in a flex container : main axe and cross axe-->
+    <!--When flex-direction : row (default), main is horizontal from left to right,
+        and cross is vertical from top tp bottom, the baseline refers to width-->
+    <!--When flex-direction : column, main is vertical from top to bottom,
+        and cross is horizontal from left tp right, the baseline refers to height-->   
+        
+    <!--Alignment-->
+        <!--Align Items Horizontally-->
+        <style>
+            .flex-container{
+                justify-content: flex_start; /* flex-end | center | space-around | space-between | space-evenly */
+            }
+        </style>
+
+        <!--Align Items Vertically-->
+        <style>
+            .flex-container{
+                align-items: stretch /*flex-start | flex-end | stretch | center ...*/
+            }
+
+            .two{
+                align-self: flex-start; /*flex-end ...*/
+            }
+        </style>
+
+        <!--Gap-->
+        <style>
+            .flex-container {
+                gap: 8px;
+                flex-direction:row ; /* column | column-reverse | row-reverse;*/ 
+                /*defines the direction items are placed in the container*/
+                flex-wrap: nowrap; /*wrap, wrap-reverse*/
+                /*sets whether flex items are forced onto one line or can wrap onto multiple lines.*/
+                flex-flow :column wrap; /*combines the properties flex-direction and flex-wrap */
+                align-content: flex-start; /* align-content determines the spacing between lines,*/
+            }
+            .two{
+                order: 0; /*-1, 0, 1 ... the order of a certain Item*/
+            }
+        </style>
+
+
+</body>
+
+</html>

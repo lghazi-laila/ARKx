@@ -1,0 +1,120 @@
+<style>
+    div{
+
+    /**Overflow: 
+    sets the desired behavior when content does not fit in the
+    parent element box (overflows) in the horizontal and/or vertical direction*/
+        overflow: visible;
+        overflow: hidden;
+        overflow: clip;
+        overflow: scroll;
+        overflow: auto;
+        overflow: hidden visible;
+    
+
+    /*opacity: sets the opacity of an element.*/
+        opacity: 0.9;
+        opacity: 90%;
+
+    /*transition: sets the time delay of a transition combined with hover in the targeted element */
+        transition: background 0.2s;
+
+    /*cursor: change the cursor when hovering over the element*/
+        cursor: pointer;
+
+    /*border-radius: */
+    border-radius: 50px;
+    border-radius: 20px / 60px; /*a=20px and b=60px (a horizontal and b vertical)*/
+    }
+
+    /*Child and Sibling Combinators*/
+    /*
+        > - the child combinator : selects the direct childrent.
+        + - the adjacent sibling combinator : selects an element that is adjacent to our target.
+        ~ - the general sibling combinator : select all of an element’s siblings and not just the first one.
+    */
+    main > div{}
+    main > div > div{}
+    .group1 + div{}
+    .group1 ~ div{}
+
+    /*Pseudo-selectors*/
+        /*Pseudo-class: 
+            (selector:Pseudo-class)
+            are a different way to target elements that already exist in HTML
+        */
+
+            /*Dynamic and User Action Pseudo-classes*/
+            div:focus{}  /*applies to an element that is currently selected.*/
+            div:hover{}  /*will affect anything under the user’s mouse pointer.*/
+            div:active{} /*applies to elements that are currently being clicked*/
+            a:link { color: blue;} /* This will apply to unvisited links */
+            a:visited { color: purple;} /*this applies to all links the user has clicked on */
+            
+            /*Structural Pseudo-classes*/
+            :root {  color: red } /*represents the very top level of your document */
+            p:first-child {font-size: 1.5em;} /*will match elements that are the firstbsibling.*/
+            p:last-child {font-size: 0.75em;} /*will match elements that are the last sibling.*/
+            section:empty {background-color: tomato;} /*will match elements that have no children at all*/
+            div p:only-child {color: red;} /*will match elements that don’t have any siblings.*/
+            .myList:nth-child(5) {/* Selects the 5th element with class myList */}
+            .myList:nth-child(3n) { /* Selects every 3rd element with class myList */}
+            .myList:nth-child(3n + 3) { /* Selects every 3rd element with class myList, beginning with the 3rd */}
+            .myList:nth-child(even) {/* Selects every even element with class myList */}
+
+        /*Pseudo-elements:
+            (selector::Pseudo-elements)
+            are used to target elements that don’t normally exist in the markup.
+        */
+        ol li::marker { /*allows you to customize the styling of your <li> elements*/
+            color: red;
+            font-weight: bold;
+        }
+        p::first-letter { /*gives special styling to the first letter of some text.*/
+            font-weight: bold;
+            color: red;
+        }    
+        .element::first-line { /* gives special styling to the first line of some text.*/
+            font-style:italic;
+        }
+        p::selection { /*changes the highlighting when a user selects text on the page.*/
+            background: #fff;
+            color: #ff0000;
+        }
+        div::before { /*insert content onto a page before an element without it needing to be in the HTML.*/
+            content: "before";
+        }
+        div::after { /*/*insert content onto a page after an element without it needing to be in the HTML.*/
+            content: "after";
+        }
+
+        /*Attribute Selectors*/
+        [src] {
+            /* This will target any element that has a src attribute. */
+        }
+
+        img[src] {
+            /* This will only target img elements that have a src attribute. */
+        }
+
+        img[src="puppy.jpg"] {
+            /* This will target img elements with a src attribute that is exactly "puppy.jpg" */
+        }
+        /*Note: we can use regular expressions inside the arrribute selector, EX:
+            [attribute^="value"] - ^= Will match strings from the start.
+            [attribute$="value"] - $= Will match strings from the end.
+            [attribute*="value"] - *= The wildcard selector will match anywhere inside the string.
+        */
+
+        /*Responsive Design*/
+            /* Extra small devices */
+                @media (max-width: 576px) { /* ... */ } 
+            /* Small devices (landscape phones, 576px and up)  */
+                @media (min-width: 576px) and (max-width: 768px) { /* ... */ } 
+            /* Medium devices (tablets, 768px and up)  */
+                @media (min-width: 768px) and (max-width: 992px)  { /* ... */ } 
+            /* Large devices (desktops, 992px and up)  */
+                @media (min-width: 992px) and (max-width: 1200px)  { /* ... */ } 
+            /* Extra large devices (large desktops, 1200px and up)  */
+                @media (min-width: 1200px) { /* ... */ } 
+</style>

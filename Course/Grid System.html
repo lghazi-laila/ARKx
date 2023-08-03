@@ -1,0 +1,48 @@
+<!--Define a grid-->
+<html>
+    <head>
+    </head>
+    <body>
+        <style>
+            .grid-item{
+                background-color: chartreuse;
+                border: 5px solid blueviolet;
+                height: 100px;
+            }
+            .grid-container {
+                display: grid; /*inline-grid*/
+                grid-template-columns: 200px 100px;
+                /*grid-template-columns: 200px 100px;*/
+                /*grid-template-columns: 2fr 1fr;*/
+                /*grid-template-columns: repeat(4, 200px);*/
+                /*grid-template-rows: 200px ;
+                grid-auto-rows: 20px; /*define the size of all indefined rows*/
+                /*grid-auto-rows: minmax(150px, auto); /*Define minimum to 150 and max to wrap the content*/
+                grid-row-gap: 20px; /*adds gap between rows*/
+                grid-column-gap: 10px; /*adds gap between columns*/
+                /*grid-gap: 10px;  /*gap: <row-gap> / <column-gap>; adds gap between grid items*/
+
+            }
+            .grid-item1{
+                grid-column: span 2;
+            }
+            .grid-item2{
+                grid-row-start: 2;
+                grid-row-end: 4;
+            }
+            .grid-item3{
+
+            }
+            .grid-item4{
+
+            }
+        </style>
+
+        <div class="grid-container">
+            <div class="grid-item grid-item1"></div>
+            <div class="grid-item grid-item2"></div>
+            <div class="grid-item grid-item3"></div>
+            <div class="grid-item grid-item4"></div>
+        </div>
+    </body>
+</html>

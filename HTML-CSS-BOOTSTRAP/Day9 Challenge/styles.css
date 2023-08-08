@@ -1,0 +1,50 @@
+:root{
+    font-size: 18px;
+}
+/*navigation bar*/
+.navbar{
+    background-color: #f7f7f7;
+}
+/*Core*/
+.core{
+    margin: 0vw 5vw;
+    padding: 5%;
+}
+.container-fluid{
+    padding: 1%;
+}
+.contact{
+    padding: 1%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+#intro{
+    padding: 5% 5% 10%;
+}
+#intro h1{
+    font-size: 7rem;
+}
+#intro h1 span{
+    background: -webkit-image-set(url(background3.jpg));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#intro p{
+    font-size: 3rem;
+}
+/*My projects*/
+.projectbackground{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    right: -10px;
+    
+    background-color: chocolate;
+}
+/*footer*/
+#contact-me{
+    background-color: #f0f4f6 ;
+}

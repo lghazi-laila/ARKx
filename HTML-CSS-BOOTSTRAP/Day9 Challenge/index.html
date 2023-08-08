@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3da149a00e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg shadow-sm pe-3 ps-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="portfolio navbar-brand" href="#">.PORTFOLIO.</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about-me">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#my-projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-danger d-grid col-2" type="submit">Hire Me</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="core ">
+        <div id="intro" class="container">
+            <h1 class="fw-bold">I'M <span>LAILA LGHAZI</span></h1>
+            <h3>Java Spring Angular developer</h3>
+        </div>
+    
+        <div id="about-me" class="container row ">
+            <div class="col-sm-5 ">
+                <img src="profilepic.jpg" >
+            </div>
+            <div class="col-sm-7">
+                <h1>ABOUT ME</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptas ea. Voluptas est recusandae maxime dolorum quasi quae eligendi modi? </p>
+                <button class="btn btn-outline-success d-grid col-6" type="submit">Contact Me</button>
+            </div>
+        </div>
+    
+        <div id="my-projects" class="container position-relative">
+            <h1 class="text-center p-5">MY PROJECTS</h1>
+            
+            <div class="row">
+                <div class="projectbackground"></div>
+                <div class="col-sm-8">
+                    <img src="Day4-Challenge-facebook-html.png">
+                </div>
+                <div class="col-sm-4">
+                    <p></p>
+                </div>
+            </div>
+            
+            <!--
+            <div id="my-projects" class="container">
+            <h1 class="text-center p-5">MY PROJECTS</h1>
+            <div class="row">
+                <div class="col-sm-7">
+                    <img src="Day4-Challenge-facebook-html.png" >
+                </div>
+                <div class="col-sm-5">
+                    <img src="Day5-Challenge-Confer.png" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="Day8-Challenge-index.png" >
+                </div>
+                <div class="col-sm-7">
+                    <img src="Day7-Challenge-index.png" >
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+
+    <div id="contact-me" class="container-flex flex-bottom shadow-sm rounded-top-5 p-3">
+        <h1 class="text-center fw-bold p-4">CONTACT</h1>
+        <div class="row justify-content-around">
+            <div class="col-sm-5">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p class="pb-3 pt-3 fs-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero at cum doloribus adipisci! Doloribus eaque alias
+                    aliquid molestias similique quos voluptates fugit dignissimos quas dolor!</p>
+                <div class="row">
+                    <i class="fa-solid fa-phone fa-xl col-sm-1"></i>
+                    <p class="col-sm-11 fs-5">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="row">
+                    <i class="fa-solid fa-envelope fa-xl col-sm-1"></i>
+                    <p class="col-sm-11 fs-5">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="row">
+                    <i class="fa-solid fa-location-dot fa-xl col-sm-1"></i>
+                    <p class="col-sm-11 fs-5">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <form class="col-sm-5 contact border border-secondary rounded">
+                <label for="name" class="form-label">Name :</label>
+                <input type="text" class="form-control" id="name" placeholder="Full Name">
+                <label for="email" class="form-label">Email address :</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="message" class="form-label">Massage :</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+                <button type="button" class="btn btn-primary btn-sm mt-3 mb-3 d-grid gap-2 col-4 mx-auto">Send Email</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
